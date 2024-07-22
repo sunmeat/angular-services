@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="menu-btn">
+    <button>&#9776;</button>
+  </div>
+  <div class="logo">
+    <img src="assets/alex.jpg" alt="Логотип">
+    <span>ROZETKA</span>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Я шукаю..." [value]="searchText" (input)="onSearchInput($event)">
+    <!--<button (click)="search()">Знайти</button>-->
+  </div>
+  <div class="language">
+    <select>
+      <option value="ru">UA</option>
+      <option value="ru">RU</option>
+      <option value="ru">EN</option>
+      <option value="en">FR</option>
+    </select>
+  </div>
+  <div class="auth">
+    <button class="login-btn">
+      <i class="fas fa-user"></i> Вхід
+    </button>
+    <button class="cart-btn">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+  </div>
+</div>

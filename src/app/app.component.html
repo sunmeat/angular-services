@@ -1,0 +1,13 @@
+<div class="app">
+    <div class="header">
+        <app-header (searchChanged)="onSearchTextChanged($event)"></app-header>
+    </div>
+    <div class="content">
+        <div class="categories-list" style="width: 30%;">
+            <app-categories></app-categories>
+        </div>
+        <div class="main-content" style="width: 70%;">
+            <app-main-content [searchText]="searchText"></app-main-content>
+        </div>
+    </div>
+</div>
